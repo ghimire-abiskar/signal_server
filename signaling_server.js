@@ -6,7 +6,7 @@ const server = http.createServer(app); // Create an HTTP server
 const io = require('socket.io')(server); // Initialize Socket.IO with the HTTP server
 
 // --- Configuration ---
-const PORT = 8080;
+const PORT = process.env.PORT.8080;
 const HOST = '0.0.0.0';
 
 // --- Start the Server ---
